@@ -58,42 +58,41 @@ function genesis_sample_enqueue_scripts_styles() {
 //* Set Localization (do not remove)
 load_child_theme_textdomain( 'genesis-sample', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'genesis-sample' ) );
 
-//* Add HTML5 markup structure
-add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );
+	
+define('CHILD_TEXT_DOMAIN', 'genesis-sample');
 
-//* Add Accessibility support
-add_theme_support( 'genesis-accessibility', array( 
-	'404-page', 
-	'drop-down-menu', 
-	'headings', 
-	'rems', 
-	'search-form', 
-	'skip-links' 
-) );
 
-//* Add viewport meta tag for mobile browsers
-add_theme_support( 'genesis-responsive-viewport' );
+	$config = array (
+		'html5' => array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form'), 
+		'genesis-accessibility' => array( 
+			'404-page', 
+			'drop-down-menu', 
+			'headings', 
+			'rems', 
+			'search-form', 
+			'skip-links' 
+			),
+		'genesis-responsive-viewport' => null,
+		'custom-header' => array(
+			'width'           => 600,
+			'height'          => 160,
+			'header-selector' => '.site-title a',
+			'header-text'     => false,
+			'flex-height'     => true,
+		),
+		'custom-background'	=> null,
+		'genesis-after-entry-widget-area' => null,
+		'genesis-footer-widgets'=> 3, 
+		'genesis-menus' => array( 
+			'primary' => __( 'After Header Menu', CHILD_TEXT_DOMAIN ), 
+			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN ) 
+		),
+	);
 
-//* Add support for custom header
-add_theme_support( 'custom-header', array(
-	'width'           => 600,
-	'height'          => 160,
-	'header-selector' => '.site-title a',
-	'header-text'     => false,
-	'flex-height'     => true,
-) );
+	foreach( $config as $feature => $args ) {
+		add_theme_support( $feature, $args);
+	}
 
-//* Add support for custom background
-add_theme_support( 'custom-background' );
-
-//* Add support for after entry widget
-add_theme_support( 'genesis-after-entry-widget-area' );
-
-//* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
-
-//* Rename primary and secondary navigation menus
-add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
 
 //* Add Image Sizes
 add_image_size( 'featured-image', 720, 400, TRUE );
