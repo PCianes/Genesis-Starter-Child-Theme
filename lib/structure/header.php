@@ -1,6 +1,6 @@
 <?php
 /**
-* Description
+* Header HTML markup structure
 *
 * @package 		PCianes\Genesis-SCT
 * @since 		1.0.0
