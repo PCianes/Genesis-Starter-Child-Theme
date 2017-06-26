@@ -11,7 +11,7 @@
 
 namespace PCianes\GenesisSCT\Customizer;
 
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . 'build_inline_css_from_customizer_settings' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\build_inline_css_from_customizer_settings' );
 /**
 * Checks the settings for the link color, and accent color.
 * If any of these value are set the appropriate CSS is output.
