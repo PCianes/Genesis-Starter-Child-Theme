@@ -70,7 +70,6 @@ function adds_theme_supports(){
 
 }
 
-
 /**
  * Add new image sizes
  *
@@ -95,3 +94,56 @@ function adds_new_image_sizes() {
 	}
 }
 
+add_filter( 'genesis_theme_settings_defaults', __NAMESPACE__ . '\set_theme_settings_defaults' );
+/**
+ * Set theme settings defaults
+ *
+ * @since 1.0.0
+  *
+ * @param array $defaults
+ *
+ * @return array
+ */
+function set_theme_settings_defaults( array $defaults ) {
+	$config = get_theme_settings_defaults();
+	$defaults =  wp_parse_args( $config, $defaults);
+
+	return $defaults;
+}
+
+add_action( 'after_switch_theme', __NAMESPACE__ . '\update_theme_settings_defaults' );
+
+/**
+ * Sets the theme setting defaults
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function update_theme_settings_defaults() {
+	$config = get_theme_settings_defaults();
+
+	if ( function_exists( 'genesis_update_settings' ) ) {
+		genesis_update_settings( $config );
+	} 
+
+	update_option( 'posts_per_page', $config['blog_cat_num'] );	
+}
+
+/**
+ * Get the theme settings defaults
+ *
+ * @since 1.0.0
+ *
+ * @return array
+ */
+function get_theme_settings_defaults() {
+	return array(
+			'blog_cat_num'              => 6,	
+			'content_archive'           => 'full',
+			'content_archive_limit'     => 0,
+			'content_archive_thumbnail' => 0,
+			'posts_nav'                 => 'numeric',
+			'site_layout'               => 'content-sidebar',
+		)
+}
