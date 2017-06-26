@@ -11,6 +11,13 @@
 
 namespace PCianes\GenesisSCT\Customizer;
 
+/**
+ * Get the settings prefix
+ *
+ * @since 1.0.0
+ *
+ * @return string
+ */
 function get_settings_prefix() {
 	return 'developers';
 }
@@ -51,7 +58,6 @@ function get_default_accent_color() {
  *
  * @return string
  */
-
 function calculate_color_contrast( $color ) {
 	
 	$hexcolor = str_replace( '#', '', $color );

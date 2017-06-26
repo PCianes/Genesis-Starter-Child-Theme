@@ -9,21 +9,23 @@
 * @license 		GNU General Public License 2.0+
 */
 
-namespace PCianes\GenesisSCT;
+namespace PCianes\GenesisSCT\Customizer;
 
-add_action( 'wp_enqueue_scripts', 'genesis_sample_css' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . 'build_inline_css_from_customizer_settings' );
 /**
 * Checks the settings for the link color, and accent color.
 * If any of these value are set the appropriate CSS is output.
 *
 * @since 1.1.0
 */
-function genesis_sample_css() {
+function build_inline_css_from_customizer_settings() {
+	$prefix = get_settings_prefix();
+
 
 	$handle  = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 
-	$color_link = get_theme_mod( 'genesis_sample_link_color', get_default_link_color() );
-	$color_accent = get_theme_mod( 'genesis_sample_accent_color', get_default_accent_color() );
+	$color_link = get_theme_mod( $prefix .'_link_color', get_default_link_color() );
+	$color_accent = get_theme_mod( $prefix .'_accent_color', get_default_accent_color() );
 
 	$css = '';
 

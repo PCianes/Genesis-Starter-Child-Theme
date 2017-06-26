@@ -1,6 +1,6 @@
 <?php
 /**
-* Description
+* Setup Child Theme
 *
 * @package 		PCianes\Genesis-SCT
 * @since 		1.0.0
@@ -38,27 +38,33 @@ function setup_child_theme() {
  */
 function adds_theme_supports(){
 	$config = array (
-		'html5' => array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form'), 
-		'genesis-accessibility' => array( 
+		'html5' 							=> array( 
+			'caption', 
+			'comment-form', 
+			'comment-list', 
+			'gallery', 
+			'search-form'
+		), 
+		'genesis-accessibility' 			=> array( 
 			'404-page', 
 			'drop-down-menu', 
 			'headings', 
 			'rems', 
 			'search-form', 
 			'skip-links' 
-			),
-		'genesis-responsive-viewport' => null,
-		'custom-header' => array(
+		),
+		'genesis-responsive-viewport' 		=> null,
+		'custom-header' 					=> array(
 			'width'           => 600,
 			'height'          => 160,
 			'header-selector' => '.site-title a',
 			'header-text'     => false,
 			'flex-height'     => true,
 		),
-		'custom-background'	=> null,
-		'genesis-after-entry-widget-area' => null,
-		'genesis-footer-widgets'=> 3, 
-		'genesis-menus' => array( 
+		'custom-background'					=> null,
+		'genesis-after-entry-widget-area' 	=> null,
+		'genesis-footer-widgets'			=> 3, 
+		'genesis-menus' 					=> array( 
 			'primary' => __( 'After Header Menu', CHILD_TEXT_DOMAIN ), 
 			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN ) 
 		),
@@ -145,5 +151,5 @@ function get_theme_settings_defaults() {
 			'content_archive_thumbnail' => 0,
 			'posts_nav'                 => 'numeric',
 			'site_layout'               => 'content-sidebar',
-		)
+		);
 }
