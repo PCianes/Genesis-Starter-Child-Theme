@@ -9,7 +9,7 @@
 * @license 		GNU General Public License 2.0+
 */
 
-namespace PCianes\Genesis-SCT;
+namespace PCianes\GenesisSCT;
 
 return array (
 
