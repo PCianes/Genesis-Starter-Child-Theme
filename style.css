@@ -93,17 +93,6 @@
 	.sidebar-primary {
 		width: 300px;
 	}
-
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3 {
-		width: 340px;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 60px;
-	}
-
 }
 
 
@@ -126,15 +115,7 @@
 		width: 400px;
 	}
 
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3 {
-		width: 300px;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 30px;
-	}
+	
 
 }
 
@@ -143,9 +124,6 @@
 	.content,
 	.content-sidebar-sidebar .content,
 	.content-sidebar-sidebar .content-sidebar-wrap,
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
@@ -181,17 +159,6 @@
 	
 
 
-	
-
-	
-
-	.footer-widgets-1,
-	.footer-widgets-2 {
-		margin: 0 auto 40px;
-	}
-
-	
-
 }
 
 @media only screen and (max-width: 860px) {
@@ -212,12 +179,7 @@
 
 	.after-entry,
 	.archive-description,
-	.author-box,
-	.comment-respond,
-	.entry,
-	.entry-comments,
-	.entry-pings,
-	.sidebar .widget {
+	.author-box {
 		padding: 30px;
 		margin-bottom: 5%;
 	}

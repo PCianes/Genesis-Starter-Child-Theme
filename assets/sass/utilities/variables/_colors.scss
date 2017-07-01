@@ -8,23 +8,19 @@ $link__hoverColor: #333;
 
 $body__backgroundColor: #eee;
 
-
 //
-// Header Colors
+// Header
 //========================
-
 $siteTitle__LinkColor: #333;
-
-
+$siteHeader__BackgroundColor: $white;
 
 //
-// Navigation Colors
+// Navigation
 //========================
 $nav__LinkColor: #333;
 $nav__HoverColor: #c3251d;
 $submenu__BorderColor: #eee;
 $submenu__LinkBackgroundColor: $white;
-
 
 $primaryNav__BackgroundColor: $white;
 $primaryNav__BorderColor: #eee;
@@ -33,7 +29,6 @@ $primaryNav__LinkColor: $nav__LinkColor;
 $secNav__BackgroundColor: $white;
 $secNav__BorderColor: #eee;
 $secNav__LinkColor: $nav__LinkColor;
-
 
 $jsNav__BackgroundColor: $white;
 $jsNav__HoverColor: $black;
@@ -47,10 +42,40 @@ $archivePagination__Color: #333;
 $archivePagination__HoverBackgroundColor: #c3251d;
 $archivePagination__HoverColor: $white;
 
+//
+// Footer
+//========================
+$siteFooter__BackgroundColor: $white;
+$siteFooter__BorderColor: #eee;
+$footerWidgets__BackgroundColor: $white;
 
 //
-// Navigation Colors
+// Entry Content
 //========================
-$siteHeader__BackgroundColor: $white;
-$siteFooter__BackgroundColor: $white;
-$footerWidgets__BackgroundColor: $white;
+$entryFooter__Meta__BorderColor: #eee;
+$entry__BackgroundColor: $white;
+$entryTitle__LinkColor: #333;
+$entryTitle__HoverColor: #c3251d;
+$entryContent__Code_BackgroundColor: #333;
+$entryContent__Code_Color: #eee;
+
+//
+// Commments
+//========================
+$comment__BackgroundColor: $white;
+
+//
+// Widgets
+//========================
+$widgetTitle__LinkColor: #333;
+
+//
+// Plugins
+//========================
+$enews__BackgroundColor: #333;
+$enews__Color: $white;
+$enews__InputBorderColor: #333;
+$enews__submitButton__BackgroundColor: #c3251d;
+$enews__submitButton__Color: $white;
+$enews__submitButton__BackgroundHoverColor: $white;
+$enews__submitButton__HoverColor: #333;
