@@ -73,63 +73,26 @@
 
 @media only screen and (max-width: 1340px) {
 
-	.content-sidebar-sidebar .content-sidebar-wrap,
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-sidebar-content .content-sidebar-wrap {
-		width: 920px;
-	}
-
-	.content,
 	.site-header .widget-area {
 		width: 800px;
 	}
 
-	.sidebar-content-sidebar .content,
-	.sidebar-sidebar-content .content,
-	.content-sidebar-sidebar .content {
-		width: 580px;
-	}
-
-	.sidebar-primary {
-		width: 300px;
-	}
+	
 }
 
 
 @media only screen and (max-width: 1200px) {
 
-	.content-sidebar-sidebar .content-sidebar-wrap,
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-sidebar-content .content-sidebar-wrap {
-		width: 740px;
-	}
 
-	.content,
 	.site-header .widget-area {
 		width: 620px;
 	}
-
-	.sidebar-content-sidebar .content,
-	.sidebar-sidebar-content .content,
-	.content-sidebar-sidebar .content {
-		width: 400px;
-	}
-
 	
 
 }
 
 @media only screen and (max-width: 1023px) {
 
-	.content,
-	.content-sidebar-sidebar .content,
-	.content-sidebar-sidebar .content-sidebar-wrap,
-	.sidebar-content-sidebar .content,
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-primary,
-	.sidebar-secondary,
-	.sidebar-sidebar-content .content,
-	.sidebar-sidebar-content .content-sidebar-wrap,
 	.site-header .widget-area {
 		width: 100%;
 	}
@@ -163,46 +126,9 @@
 
 @media only screen and (max-width: 860px) {
 
-	body > div {
-		font-size: 1.8rem;
-	}
-
-	body {
-		font-size: 18px;
-		font-size: 1.8rem;
-	}
-
-	.wrap {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-
-	.after-entry,
-	.archive-description,
-	.author-box {
-		padding: 30px;
-		margin-bottom: 5%;
-	}
 
 	.sidebar {
 		margin-bottom: 5%;
-	}
-
-	
-
-	.five-sixths,
-	.four-sixths,
-	.one-fourth,
-	.one-half,
-	.one-sixth,
-	.one-third,
-	.three-fourths,
-	.three-sixths,
-	.two-fourths,
-	.two-sixths,
-	.two-thirds {
-		margin: 0;
-		width: 100%;
 	}
 
 }

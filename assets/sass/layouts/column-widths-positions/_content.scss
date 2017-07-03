@@ -2,21 +2,37 @@
 
 .content {
 	float: right;
-	width: 880px;
-}
+	width: $content__Width;
 
-.content-sidebar .content,
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content {
-	float: left;
-}
+	@media only screen and (max-width: $largerScreen) {
+		width: $content_largerScreenWidth;
+	}
+	
+	@media only screen and (max-width: $largeScreen) {
+			width: $content_largeScreenWidth; 
+		}
 
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content,
-.sidebar-sidebar-content .content {
-	width: 660px;
-}
+	.content-sidebar-sidebar &,
+	.sidebar-content-sidebar &,
+	.sidebar-sidebar-content & {
+		width: $contentBothSidebars__Width;
+	
+		@media only screen and (max-width: $largerScreen) {
+			width: $contentBothSidebars__LargerScreenWidth;
+		}
 
-.full-width-content .content {
-	width: 100%;
+		@media only screen and (max-width: $largeScreen) {
+			width: $contentBothSidebars__LargeScreenWidth;
+		}
+	}
+	
+	.content-sidebar &,
+	.content-sidebar-sidebar &,
+	.sidebar-content-sidebar & {
+		float: left;
+	}
+
+	.full-width-content & {
+		width: 100%;
+	}
 }

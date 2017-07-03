@@ -1,8 +1,40 @@
 //
 // Dimensions Variables
 //=======================
+$baseWidth: 1280;
+$gutter: 40px;
 
-//Example Screen: huge, large, medium, small, micro
+//
+// Max Widths
+//=======================
+// $maxWidth: 1280px;
+$maxWidth: $baseWidth + px;
+$maxWidth__LargerScreen: 1140px;
+$maxWidth__LargeScreen: 960px;
+$maxWidth__MediumScreen: 800px;
+$maxWidth__LandingPage: 800px;
+
+//
+// Content Widths
+//=======================
+//$content__Width: 880px;
+$content__Width: $baseWidth * 0.6875 + px;
+$content_largerScreenWidth: 800px;
+$content_largeScreenWidth: 620px;
+$contentBothSidebars__Width: 660px;
+$contentBothSidebars__LargerScreenWidth: 580px;
+$contentBothSidebars__LargeScreenWidth: 400px;
+
+//$primarySidebar__Width: 360px;
+//$primarySidebar__Width: $maxWidth - $content__Width - $gutter;
+$primarySidebar__Width: $baseWidth * 0.28125 + px;
+$primarySidebar__LargerScreenWidth: 300px;
+//$secSidebar__Width: 180px;
+$secSidebar__Width: $baseWidth * 0.140625 + px;
+
+$contentSidebarWrap__Width: 1060px;
+$contentSidebarWrap__LargerScreenWidth: 920px;
+$contentSidebarWrap__LargeScreenWidth: 740px;
 
 // Header Module
 $titleArea__Width: 300px;
