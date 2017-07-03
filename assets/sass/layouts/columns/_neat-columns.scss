@@ -1,6 +1,8 @@
+//
+// Neat Columns - using the Neat framework
+//===========================================
 
-
-@include media($smallScreen) {
+@include media($screen-size--small) {
 
   .one-half,
   .three-sixths,
@@ -71,7 +73,7 @@
   }
 }
 
-@media only screen and (max-width: $smallScreen) {
+@include media( $breakpoint__screen-size--small ) {
   .five-sixths,
   .four-sixths,
   .one-fourth,
