@@ -1,0 +1,24 @@
+{
+  "name": "genesis-starter",
+  "version": "1.0.0",
+  "description": "The Genesis-powered Developer´s Starter Child Theme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCianes/Genesis-Starter-Child-Theme.git"
+  },
+  "author": "",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/PCianes/Genesis-Starter-Child-Theme/issues"
+  },
+  "homepage": "https://github.com/PCianes/Genesis-Starter-Child-Theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2"
+  }
+}

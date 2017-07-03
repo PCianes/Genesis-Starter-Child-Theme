@@ -1,6 +1,6 @@
 .author-box {
 	background-color: $author-box--background-color;
-	font-size: rem( $author-box--font-size );
+	@include rem(font-size, $author-box--font-size );
 	margin-bottom: 40px;
 	padding: 60px;
 
@@ -15,5 +15,5 @@
 }
 
 .author-box-title {
-	font-size: rem ( $author-box__Title--font-size );
+	@include rem(font-size, $author-box__Title--font-size );
 }

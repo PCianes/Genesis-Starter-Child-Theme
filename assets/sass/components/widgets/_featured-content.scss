@@ -11,7 +11,7 @@
 		}
 
 		.entry-title {
-			font-size: rem( $featured-content__entry-title--font-size );
+			@include rem(font-size, $featured-content__entry-title--font-size );
 		}
 	}
 }
