@@ -2,7 +2,6 @@
 	.entry-meta {
 		margin-bottom: 24px;
 		@include rem(font-size, $entry-header__entry-meta--font-size );
-		margin-bottom: 0;
 	}
 }
 
